@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Global Variables */
+:root {
+    --color-1: #05386B;
+    --color-2: #379683;
+    --color-3: #5CDB95;
+    --color-4: #8EE4AF;
+    --color-5: #EDF5E1;
+}
+
+
+/* Main Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    background: var(--color-1);
+    color: var(--color-5);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Left Side Styling */
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 2.5rem;
+}
+
+form {
+    width: 80%;
+    padding-bottom: 2.5rem;
+}
+
+.logo {
+    margin-bottom: 10vh;
+}
+
+label {
+    font-size: 0.85rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+input {
+    margin-bottom: 1.25rem;
+    width: 100%;
+    border-radius: 2px;
+    background: var(--color-1);
+    border: 1px solid var(--color-2);
+    color: var(--color-5);
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+
+button {
+    width: 100%;
+}
+
+button {
+    padding: 0.75rem 1rem;
+    height: 2.5rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 700;
+    background: var(--color-3);
+    color: var(--color-5);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background: var(--color-2);
+}
+
+a {
+    color: var(--color-5);
+    text-decoration: none;
+}
+
+.links a {
+    display: block;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+    width: 60%;
+}
+
+.or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: var(--color-2);
+}
+
+.or span {
+    color: var(--color-5);
+    padding: 0 0.8rem;
+}
+
+.create-btn {
+    padding: 0.75rem 1rem;
+    height: 2.5rem;
+    width: 60%;
+    display: block;
+    border: 1px solid var(--color-5);
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: var(--color-5);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.create-btn:hover {
+    color: var(--color-2);
+    border-color: var(--color-2);
+}
+
+footer div {
+    text-align: center;
+    margin-bottom: 3vh;
+    color: var(--color-1);
+}
+
+footer div a {
+    color: var(--color-1);
+    transition: all 0.5s;
+}
+
+footer div a:hover {
+    color: var(--color-5);
+}
+
+
+/* Right Side Styling */
+#right {
+    flex: 1;
+}
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    background: url('background.jpg') no-repeat center center / cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.showcase-content > h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.purchase-btn {
+    padding: 0.75rem 1rem;
+    height: 2.5rem;
+    width: 60%;
+    display: block;
+    border: 1px solid var(--color-1);
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: var(--color-1);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.purchase-btn:hover {
+    color: var(--color-5);
+    background-color: var(--color-3);
+    border-color: var(--color-2);
+}
+
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    #left {
+        flex: 4;
+    }
+  
+    #right {
+        flex: 6;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        overflow: auto;
+    }
+
+    #left {
+        border: none;
+        justify-content: start;
+    }
+  
+    #right {
+        display: none;
+    }
+  
+    #left {
+        margin-top: 4vh;
+    }
+  
+    input {
+        margin-bottom: 0.75rem;
+    }
+  
+    footer {
+        padding-top: 1rem;
+    }
+    footer div, footer div a {
+        color: var(--color-5)
+    }
+}
