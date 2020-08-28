@@ -22,12 +22,6 @@
 
   <p align="center">
     A collection of Frontend Projects I have built for practice, learning, and enjoyment. 
-    <br />
-    <br />
-    <a href="http://satelliting.tk/projects/frontend/loginPage/">View Demo</a>
-    ·
-    <a href="https://github.com/satelliting/FrontendProjects/issues">Report Bug</a>
-  </p>
 </p>
 
 
