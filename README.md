@@ -35,9 +35,19 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
+* [About](#about)
 * [License](#license)
 * [Contact](#contact)
 
+
+
+<!-- ABOUT -->
+## About
+
+The following is a little bit of information regarding each project that is included in this repository.
+
+* MotivationalSpeakers: This was a project that I was asked to do by a company as part of a coding challenge for their frontend application.
+* FlexLoginPage: I was bored one day and wanted to see if I could develop a different style of login page then just the plain center-aligned form page structure.
 
 
 
